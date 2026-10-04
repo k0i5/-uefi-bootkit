@@ -1,0 +1,14 @@
+[Defines]
+  DEC_SPECIFICATION = 0x00010005
+  PACKAGE_NAME      = BootkitPkg
+  PACKAGE_GUID      = 7b2c9e04-4a1d-4f5e-9c3b-1e8f7a2d4b6c
+  PACKAGE_VERSION   = 1.0
+
+[Includes]
+  Include
+
+[Guids]
+
+[Protocols]
+
+[PcdsFixedAtBuild]

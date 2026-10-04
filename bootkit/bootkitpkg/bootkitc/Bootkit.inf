@@ -1,0 +1,34 @@
+[Defines]
+  INF_VERSION    = 0x00010005
+  BASE_NAME      = Bootkit
+  FILE_GUID      = 5e8a3b71-2d4c-4f9a-b6e8-1c7a9d3f0e24
+  MODULE_TYPE    = DXE_DRIVER
+  VERSION_STRING = 1.0
+  ENTRY_POINT    = BootkitEntry
+
+[Sources]
+  Bootkit.c
+  Hook.c
+  Pe.c
+  Log.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  BootkitPkg/BootkitPkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  UefiBootServicesTableLib
+  UefiLib
+  BaseLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  DebugLib
+  SerialPortLib
+  DevicePathLib
+
+[Protocols]
+  gEfiLoadedImageProtocolGuid
+
+[Depex]
+  TRUE
